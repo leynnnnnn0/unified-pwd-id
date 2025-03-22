@@ -47,8 +47,7 @@ function App() {
   return (
     <>
       <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-5 sm:py-10 min-h-screen flex flex-col relative overflow-hidden">
-
-        <nav className="flex items-center justify-between relative z-10">
+        <nav className="flex items-center justify-between relative z-20">
           <img src={MainLogo} alt="logo" className="h-6 sm:h-8" />
 
           <button
@@ -100,7 +99,7 @@ function App() {
           </ul>
 
           <div
-            className={`absolute top-full left-0 right-0 bg-white shadow-lg md:hidden transition-all duration-300 z-10 ${
+            className={`absolute top-full left-0 right-0 bg-white shadow-lg md:hidden transition-all duration-300 z-30 ${
               isMenuOpen ? "max-h-fit py-4" : "max-h-0 overflow-hidden"
             }`}
           >
@@ -146,7 +145,7 @@ function App() {
           className="flex-1 flex items-center justify-center flex-col py-8 animate-on-scroll relative z-10"
         >
           <h1
-            className={`font-[montserrat] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl w-full sm:w-[90%] md:w-[80%] lg:w-[800px] text-center text-[#1F1F1F] transition-all duration-1000 ${
+            className={`z-0 font-[montserrat] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl w-full sm:w-[90%] md:w-[80%] lg:w-[800px] text-center text-[#1F1F1F] transition-all duration-1000 ${
               isVisible["hero"]
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-10"
