@@ -9,6 +9,8 @@ import FRONTEND from "./images/front.png";
 import FULLSTACK from "./images/full.png";
 import CEO from "./images/ceo.png";
 import BACKEND from "./images/back.png";
+import MISSION from "./images/mission.jpg";
+import VISION from "./images/vision.jpg";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -304,13 +306,15 @@ function App() {
                 : "opacity-0 -translate-x-20"
             } hover:shadow-xl hover:border-l-4 hover:border-blue-600`}
           >
-            <img src={Step1} alt="Mission" className="max-w-full h-auto" />
-            <h1 className="font-[inter] text-[#292929] font-bold text-center">
+            <img src={MISSION} alt="Mission" className="h-32" />
+            <h1 className="font-[inter] text-[#292929] font-bold text-center text-2xl">
               Mission
             </h1>
             <p className="font-[inter] text-[#6F6F75] text-center text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rem
-              iusto laudantium delectus, asperiores soluta aspernatur.
+              Our mission is to assist the government and businesses in
+              efficiently creating and verifying PWD (Persons with Disabilities)
+              IDs to combat fraud while promoting and protecting the rights of
+              individuals with disabilities.
             </p>
           </div>
 
@@ -321,13 +325,17 @@ function App() {
                 : "opacity-0 translate-x-20"
             } hover:shadow-xl hover:border-r-4 hover:border-blue-600`}
           >
-            <img src={Step1} alt="Vision" className="max-w-full h-auto" />
-            <h1 className="font-[inter] text-[#292929] font-bold text-center">
+            <img src={VISION} alt="Vision" className="h-32" />
+            <h1 className="font-[inter] text-[#292929] font-bold text-center text-2xl">
               Vision
             </h1>
             <p className="font-[inter] text-[#6F6F75] text-center text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rem
-              iusto laudantium delectus, asperiores soluta aspernatur.
+              To be the nationwide standard for PWD ID verification, fostering
+              an inclusive, fraud-free, and efficient system where persons with
+              disabilities can access their benefits with ease and dignity. We
+              envision a future where businesses confidently provide PWD
+              discounts, knowing that each transaction is secure, transparent,
+              and fair for all.
             </p>
           </div>
         </div>
@@ -457,9 +465,13 @@ function App() {
             <h1 className="font-[montserrat] text-[#292929] font-bold mb-3">
               Links
             </h1>
-            <p className="font-[poppins] text-[#727278] text-sm hover:text-blue-700 transition-colors duration-300 cursor-pointer">
+            <a
+              href="https://www.facebook.com/share/1BhYXfJZJK/?mibextid=wwXIfr"
+              target="_blank"
+              className="font-[poppins] text-[#727278] text-sm hover:text-blue-700 transition-colors duration-300 cursor-pointer"
+            >
               Facebook
-            </p>
+            </a>
             <p className="font-[poppins] text-[#727278] text-sm hover:text-blue-700 transition-colors duration-300 cursor-pointer">
               Instagram
             </p>
