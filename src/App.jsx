@@ -163,7 +163,7 @@ function App() {
             }`}
           >
             A seamless connection between government support and business
-            innovation, delivering PWD services with just a few clicks.
+            innovation, delivering PWD services with just a few taps.
           </p>
           <div
             className={`items-center flex justify-center transition-all duration-1000 delay-500 ${
